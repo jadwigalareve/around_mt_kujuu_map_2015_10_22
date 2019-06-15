@@ -22,6 +22,10 @@ https://github.com/gsi-cyberjapan/geojson-with-style-spec
 
 URL末尾に`?longitude=35.858309&latitude=138.989754&zoom=12`のようにパラメータをつけることで変更された状態のものにアクセスできるようになります。
 
+ただし**Internet Explorer 11を含む**古いブラウザでは利用できません(無視されます)。利用できるかは  
+[URLSearchParams.get() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/get#Browser_compatibility)  
+を確認してください。
+
 - `longitude` (default: `35.858309`): 緯度。`-90 <= longitude <= 90`の数値
 - `latitude` (default: `138.989754`): 軽度。`-180 <= latitude <= 180`の数値
 - `zoom` (default: `12`): ズーム。`2 <= zoom <= 18`の整数
