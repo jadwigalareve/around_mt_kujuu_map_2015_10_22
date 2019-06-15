@@ -83,8 +83,31 @@ xhr.onreadystatechange = function(){
   //IE11 doesn't supprot URLSearchParams
   if (URLSearchParams && window.location.search) {
     var params = new URLSearchParams(window.location.search);
-    longitude = params.get('longitude') || longitude;
-    latitude = params.get('latitude') || latitude;
+    /**
+     * @param name {string}
+     * @param validate {(v: string) => boolean}
+     */
+    function parser(name, defaultValue, validate){
+      var p = params.get(name);
+      if (
+        p &&
+        validate &&
+        typeof validate === "function"
+        && typeof validate.nodeType !== "number"
+        && validate(p)
+      ) {
+        return p;
+      }
+      return defaultValue;
+    }
+    longitude = parser('longitude', longitude, function(v){
+      var n = parseFloat(v);
+      return v == n && -90 <= n && n <= 90;
+    });
+    latitude = parser('latitude', latitude, function(v){
+      var n = parseFloat(v);
+      return v == n && -180 <= n && n <= 180;
+    });
   }
 
   // 背景地図設定
