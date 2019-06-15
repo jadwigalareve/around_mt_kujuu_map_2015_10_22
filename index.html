@@ -78,6 +78,14 @@ xhr.onreadystatechange = function(){
     }
   });
 
+  var longitude = 35.858309;
+  var latitude = 138.989754;
+  //IE11 doesn't supprot URLSearchParams
+  if (URLSearchParams && window.location.search) {
+    var params = new URLSearchParams(window.location.search);
+    longitude = params.get('longitude') || longitude;
+    latitude = params.get('latitude') || latitude;
+  }
 
   // 背景地図設定
   var std = L.tileLayer(
@@ -92,7 +100,7 @@ xhr.onreadystatechange = function(){
 
   // 中心位置設定
   var map = L.map('mapdiv', {
-    center: [35.858309, 138.989754], zoom: 12, layers: [std,sampleLayer]
+    center: [longitude, latitude], zoom: 12, layers: [std,sampleLayer]
   });
 
   L.control.scale({imperial: false}).addTo(map);
