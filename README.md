@@ -27,7 +27,7 @@ URL末尾に`?longitude=35.858309&latitude=138.989754&zoom=12`のようにパラ
 を確認してください。
 
 - `longitude` (default: `35.858309`): 緯度。`-90 <= longitude <= 90`の数値
-- `latitude` (default: `138.989754`): 軽度。`-180 <= latitude <= 180`の数値
+- `latitude` (default: `138.989754`): 経度。`-180 <= latitude <= 180`の数値
 - `zoom` (default: `12`): ズーム。`2 <= zoom <= 18`の整数
 
 ## 大ダワ林道、二軒小屋尾根ルート
