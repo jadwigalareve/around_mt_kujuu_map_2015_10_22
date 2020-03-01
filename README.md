@@ -1,12 +1,12 @@
-# 2019年5月1日〜5日　奥秩父主脈縦走
+# 2015年10月21日〜22日　晩秋の久住
 
-https://jadwigalareve.github.io/around_mt_kumotori_map_2019_05/index.html
+https://jadwigalareve.github.io/around_mt_kujuu_map_2015_10/index.html
 
-電子国土地理院の上に2019年5月に奥秩父主脈縦走を行ったときの登山ルートを作図します。
+電子国土地理院の上に2015年10月に久住連山縦走を行ったときの登山ルートを作図します。
 
 登山の記事は
 
-https://jadwigalareve.hatenablog.jp/entry/2019/06/09/233742
+https://jadwigalareve.hatenablog.jp/entry/2020/02/22/200919
 
 にあります。
 
