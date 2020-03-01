@@ -1,4 +1,4 @@
-# 2015年10月21日〜22日　晩秋の久住
+# 2015年10月21日　晩秋の久住
 
 https://jadwigalareve.github.io/around_mt_kujuu_map_2015_10/index.html
 
