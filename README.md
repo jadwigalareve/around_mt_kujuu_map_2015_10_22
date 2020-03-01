@@ -1,6 +1,6 @@
 # 2015年10月21日　晩秋の久住
 
-https://jadwigalareve.github.io/around_mt_kujuu_map_2015_10/index.html
+https://jadwigalareve.github.io/around_mt_kujuu_map_2015_10_21/index.html
 
 電子国土地理院の上に2015年10月に久住連山縦走を行ったときの登山ルートを作図します。
 
